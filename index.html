@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Home Builder Lokal — Denah 3D</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1>Home Builder · Denah 9 × 13 m</h1>
+    <div class="seg" role="group" aria-label="Mode tampilan">
+      <button id="m3d" aria-pressed="true">3D</button>
+      <button id="m2d" aria-pressed="false">Edit denah</button>
+    </div>
+    <button class="iconbtn" id="undo" title="Batalkan (Ctrl+Z)" disabled>Batalkan</button>
+    <button class="iconbtn" id="tpanel" aria-expanded="true" title="Tampilkan/sembunyikan panel">Panel</button>
+  </header>
+  <div id="main">
+  <div id="stage">
+    <canvas id="three"></canvas>
+    <svg id="leaders"></svg>
+    <div id="labels"></div>
+    <svg id="svg2d" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div class="hint" id="hint"></div>
+    <div class="floatbar" id="fb3d"><button data-cam="full" aria-pressed="false" title="Tampilkan dinding setinggi sebenarnya (matikan untuk memotong agar isi ruang terlihat)">Dinding penuh</button><button data-cam="iso">Miring</button><button data-cam="top">Atas</button><a href="walkthrough.html" target="_blank" rel="noopener" title="Buka tampilan 3D realistis yang bisa dijelajahi jalan kaki, di tab baru">Jelajah 3D ↗</a></div>
+    <div class="floatbar" id="fb2d" style="display:none"><button data-z="in" aria-label="Perbesar">＋</button><button data-z="out" aria-label="Perkecil">－</button><button data-z="fit">Pas</button></div>
+  </div>
+  <div id="gutter" role="separator" aria-orientation="vertical" aria-label="Ubah lebar panel" tabindex="0" title="Seret untuk mengubah lebar panel (klik dua kali: kembalikan)"></div>
+  <div id="panel"></div>
+  </div>
+</div>
+
+<!-- Pustaka 3D (lokal, bisa offline) -->
+<script src="vendor/three.min.js"></script>
+<script src="vendor/OrbitControls.js"></script>
+<!-- Data: ubah file-file ini untuk menyesuaikan denah & katalog -->
+<script src="js/data/katalog.js"></script>
+<script src="js/data/denah-awal.js"></script>
+<!-- Logika & tampilan -->
+<script src="js/core/geometri.js"></script>
+<script src="js/view/view3d.js"></script>
+<script src="js/view/editor2d.js"></script>
+<script src="js/view/panel.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

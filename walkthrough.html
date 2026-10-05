@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jelajah 3D — Home Builder Lokal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/walkthrough.css">
+</head>
+<body class="wt-body">
+<div id="wtStage">
+  <canvas id="wtCanvas"></canvas>
+  <div id="wtCrosshair" aria-hidden="true"></div>
+  <div id="wtRoomLabel"></div>
+  <a id="wtBack" href="index.html" title="Kembali ke editor denah">← Editor</a>
+  <div id="wtHint">Tahan untuk melihat kontrol. Tekan Esc atau klik "← Editor" untuk keluar.</div>
+
+  <div id="wtStart">
+    <div class="wtStartCard">
+      <h1>Jelajah 3D</h1>
+      <p id="wtStartText">Memuat…</p>
+      <button id="wtStartBtn" class="btn pri">Mulai jalan-jalan</button>
+    </div>
+  </div>
+
+  <!-- kontrol sentuh (hanya tampil otomatis di HP/tablet) -->
+  <div id="wtJoyMove" class="wtJoy" aria-hidden="true"><div class="wtJoyKnob"></div></div>
+  <div id="wtJoyLook" class="wtJoyLookZone" aria-hidden="true"></div>
+</div>
+
+<!-- Pustaka 3D (lokal, bisa offline) -->
+<script src="vendor/three.min.js"></script>
+<!-- Data: sama persis dengan yang dipakai editor (index.html) -->
+<script src="js/data/katalog.js"></script>
+<script src="js/data/denah-awal.js"></script>
+<script src="js/core/geometri.js"></script>
+<!-- Scene 3D realistis + kontrol jalan -->
+<script src="js/view/walkthrough3d.js"></script>
+</body>
+</html>
