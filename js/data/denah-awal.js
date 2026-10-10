@@ -5,12 +5,12 @@
    yang sedang terbuka saat itu. Untuk format datanya, lihat README.md
    bagian "Mengubah denah bawaan". Menulis manual ke berkas ini tetap bisa,
    asal tetap diakhiri "HB.DENAH_AWAL = {...};" di dalam IIFE seperti ini.
-   Disimpan otomatis: 10/10/2026, 23.35.10
+   Disimpan otomatis: 10/10/2026, 23.42.42
    ===================================================================== */
 (function () {
   const HB = (window.HB = window.HB || {});
   HB.DENAH_AWAL = {
-  "versi": "2026-10-10T23-35-10",
+  "versi": "2026-10-10T23-42-42",
   "site": {
     "w": 9,
     "d": 13
@@ -577,7 +577,7 @@
     {
       "id": "i61",
       "cat": "meja_makan_konter",
-      "x": 4.7,
+      "x": 5,
       "y": 3,
       "rot": 270,
       "w": 1.2,
