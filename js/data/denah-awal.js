@@ -5,12 +5,12 @@
    yang sedang terbuka saat itu. Untuk format datanya, lihat README.md
    bagian "Mengubah denah bawaan". Menulis manual ke berkas ini tetap bisa,
    asal tetap diakhiri "HB.DENAH_AWAL = {...};" di dalam IIFE seperti ini.
-   Disimpan otomatis: 10/10/2026, 23.29.22
+   Disimpan otomatis: 10/10/2026, 23.35.10
    ===================================================================== */
 (function () {
   const HB = (window.HB = window.HB || {});
   HB.DENAH_AWAL = {
-  "versi": "2026-10-10T23-29-22",
+  "versi": "2026-10-10T23-35-10",
   "site": {
     "w": 9,
     "d": 13
@@ -577,9 +577,9 @@
     {
       "id": "i61",
       "cat": "meja_makan_konter",
-      "x": 4.55,
-      "y": 4.775,
-      "rot": 0,
+      "x": 4.7,
+      "y": 3,
+      "rot": 270,
       "w": 1.2,
       "d": 0.8,
       "name": "Meja makan 120×80"
@@ -592,20 +592,9 @@
       "rot": 0
     },
     {
-      "id": "i60",
-      "cat": "kitchen_island",
-      "x": 5.7,
-      "y": 2.075,
-      "rot": 90,
-      "w": 1.4,
-      "d": 0.45,
-      "h": 0.9,
-      "name": "Island dapur"
-    },
-    {
       "id": "i18",
       "cat": "freezer_box",
-      "x": 6.25,
+      "x": 5.75,
       "y": 1.675,
       "rot": 90,
       "w": 0.6
@@ -613,17 +602,17 @@
     {
       "id": "i17",
       "cat": "kulkas_1",
-      "x": 6.85,
+      "x": 6.35,
       "y": 1.675,
       "rot": 0
     },
     {
       "id": "i14",
       "cat": "kitchen_bawah",
-      "x": 8.025,
+      "x": 7.75,
       "y": 1.625,
       "rot": 0,
-      "w": 1.8,
+      "w": 2.2,
       "d": 0.5,
       "h": 0.82,
       "name": "Meja landasan kompor"
@@ -656,9 +645,9 @@
       "id": "i33",
       "cat": "kitchen_sink",
       "x": 8.675,
-      "y": 3.125,
+      "y": 2.825,
       "rot": 90,
-      "w": 1,
+      "w": 1.85,
       "d": 0.5,
       "h": 1.15,
       "name": "Bak cuci piring"
@@ -666,11 +655,12 @@
     {
       "id": "i15",
       "cat": "kitchen_atas",
-      "x": 8.75,
-      "y": 3.125,
-      "rot": 90,
-      "w": 1,
-      "name": "Kabinet gantung atas bak cuci"
+      "x": 7.4,
+      "y": 1.625,
+      "rot": 0,
+      "w": 1.55,
+      "name": "Kabinet gantung atas bak cuci",
+      "d": 0.5
     },
     {
       "id": "i22",
